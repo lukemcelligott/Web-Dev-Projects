@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Luke McElligott's Dice Roll</title>
+    <script src = "./Dice_roll_index.js" type='text/javascript'></script>
+</head>
+<body>
+    <h1>Dice Simulator</h1>
+    <p>Click a button below to simulate dice rolls</p>
+    <div>
+        <button onclick="simulateDiceRolls(100)">100 rolls</button>
+        <button onclick="simulateDiceRolls(1000)">1,000 rolls</button>
+        <button onclick="simulateDiceRolls(100000)">100,000 rolls</button>
+        <button onclick="simulateDiceRolls(100000000)">100,000,000 rolls</button>
+        <button onclick="simulateDiceRolls(1000000000)">1,000,000,000 rolls</button>
+    </div>
+    <h1>Results</h1>
+    <div>
+        <table border>
+            <tr>
+                <th></th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+            </tr>
+            <tr>
+                <th>Count</th>
+                <td id="oneCount">0</td>
+                <td id="twoCount">0</td>
+                <td id="threeCount">0</td>
+                <td id="fourCount">0</td>
+                <td id="fiveCount">0</td>
+                <td id="sixCount">0</td>
+            </tr>
+        </table>
+    </div>
+    <button onclick="resetCounts()">Clear Count</button>
+</body>
+</html>
